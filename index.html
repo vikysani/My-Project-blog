@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -18,27 +18,29 @@
   <body>
     <header>
       <div class="container mx-auto px-5">
-        <nav class="flex bg-[rgb(254,240,247)] h-25">
+        <nav
+          class="flex bg-[rgb(254,240,247)] drop-shadow-md py-9 px-7 italic font-semibold text-lg text-purple-950"
+        >
           <ul class="flex gap-7">
             <li>
               <a
                 href=""
                 class="nav-link text-sm hover:font-medium hover:underline"
-                >About me</a
+                >New beginnings</a
               >
             </li>
             <li>
               <a
                 href=""
                 class="nav-link text-sm hover:font-medium hover:underline"
-                >Recipes</a
+                >Recipes and more</a
               >
             </li>
             <li>
               <a
                 href=""
                 class="nav-link text-sm hover:font-medium hover:underline"
-                >My Pics</a
+                >My hobby Pics</a
               >
             </li>
           </ul>
@@ -46,76 +48,64 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="text-center text-3xl font-bold mb-8">MY LIFE'S Project</h1>
-      </section>
-
-      <section class="week-recipes my-24">
-        <div class="container mx-auto px-4">
-          <h2 class="text-2xl font-semibold mb-6">My selection for the week</h2>
-
+      <section class="hero my-20">
+        <div class="container mx-auto px-5">
           <div class="flex justify-center items-center flex-wrap gap-6">
+            <a
+              class="item-card w-[450px] h-[449px] bg-[rgb(252,250,244)] text-[#3B3B39] p-8 flex flex-col justify-center leading-snug"
+              href="/"
+            >
+              <h1 class="h1-font font-normal text-3xl">
+                Let's meet and share ideas together
+              </h1>
+              <p class="font-light text-lg mt-6">
+                Welcome! Be part of my journey as I share my favorite recipes,
+                cherished photos, and personal stories with you. Let’s work
+                together to create meaningful moments and experiences that
+                inspire.
+              </p>
+              <p class="font-light text-lg mt-2">
+                Join me as I open up my world and invite you to be a part of
+                each step!
+              </p>
+              <svg
+                class="self-end"
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.40002 27C5.40002 25.8816 6.30665 24.975 7.42502 24.975L41.4183 24.975L35.7471 19.7089C34.9276 18.9479 34.8801 17.6666 35.6411 16.847C36.4021 16.0275 37.6834 15.9801 38.5029 16.7411L47.9529 25.5161C48.3656 25.8992 48.6 26.4369 48.6 27C48.6 27.563 48.3656 28.1007 47.9529 28.4839L38.5029 37.2589C37.6834 38.0199 36.4021 37.9724 35.6411 37.1529C34.8801 36.3333 34.9276 35.0521 35.7471 34.2911L41.4183 29.025L7.42502 29.025C6.30665 29.025 5.40002 28.1183 5.40002 27Z"
+                  fill="#3B3B39"
+                />
+              </svg>
+            </a>
             <div class="item w-fit text-center">
               <img
-                src="./images/Screenshot 2024-10-29 at 13.15.27.png"
+                src="./images/Sopaipillas.png"
                 alt="sopaipillas"
                 class="w-72 h-auto"
               />
-              <div>
-                <p>
-                  The Chilean version of Sopaipillas is a type of fried, round
-                  dough, and my favorite kind includes pumpkin—a choice that can
-                  spark debate even among Chileans! Sopaipillas can be enjoyed
-                  with avocado or pebre sauce for a savory twist, or in a sweet
-                  version with a chancaca syrup, known as sopaipillas pasadas
-                </p>
+              <div
+                class="name-price my-4 flex justify-between items-center font-bold"
+              >
+                <span>The Chilean Sopaipillas</span>
               </div>
             </div>
             <div class="item w-fit text-center">
               <img
-                src="./images/Screenshot 2024-10-29 at 13.17.55.png"
+                src="./images/empanadas.png"
                 alt="empanada"
-                class="w-72 h-282"
-              />
-              <div>
-                <p>
-                  Another beloved Chilean dish is empanadas fritas, or fried
-                  empanadas. They can be filled with meat, seafood, or, as in
-                  this recipe, a delicious combination of cheese and shrimp.
-                  This is my favorite recipe, tied to countless holiday memories
-                  from my childhood.
-                </p>
-              </div>
-            </div>
-            <div class="item w-fit text-center">
-              <img
-                src="./images/Screenshot 2024-10-29 at 13.19.09.png"
-                alt="pasta"
-                class="w-72 h-282"
-              />
-              <div>
-                <p>
-                  Pasta is one of the best dishes Italy has given to the world.
-                  Today, it’s a global culinary favorite, and we can always add
-                  our own twist to each dish. This is my favorite recipe, made
-                  with asparagus, shrimp, and vegan cream.
-                </p>
-              </div>
-            </div>
-            <div class="item w-fit text-center">
-              <img
-                src="./images/Screenshot 2024-10-29 at 13.18.29.png"
-                alt="paella"
                 class="w-72 h-auto"
               />
-              <div>
-                <p>
-                  Here’s another classic paella! This is a variant on the
-                  traditional recipe, but it’s just as delicious and has my own
-                  personal twist that I’d love to share today. The rice I cooked
-                  for my friends included chorizo, chicken, and shrimp—a true
-                  flavor explosion.
-                </p>
+              <div
+                class="name-price my-4 flex justify-between items-center font-bold"
+              >
+                <span>Empanadas fritas</span>
               </div>
             </div>
           </div>
@@ -123,31 +113,63 @@
       </section>
 
       <section>
-        <div>
-          <img src="./images/Lübeck__IMG_0569.jpg" alt="lubeck" />
+        <div class="container mx-auto px-5 flex flex-wrap gap-6">
+          <div class="item w-fit text-center">
+            <img src="./images/pasta.png" alt="pasta" class="w-72 h-auto" />
+            <div>
+              <p>
+                Pasta is one of the best dishes Italy has given to the world.
+                Today, it’s a global culinary favorite, and we can always add
+                our own twist to each dish. This is my favorite recipe, made
+                with asparagus, shrimp, and vegan cream.
+              </p>
+            </div>
+          </div>
+          <div class="item w-fit text-center">
+            <img src="./images/paella.png" alt="paella" class="w-72 h-auto" />
+            <div>
+              <p>
+                Here’s another classic paella! This is a variant on the
+                traditional recipe, but it’s just as delicious and has my own
+                personal twist that I’d love to share today. The rice I cooked
+                for my friends included chorizo, chicken, and shrimp—a true
+                flavor explosion.
+              </p>
+            </div>
+          </div>
         </div>
-        <p>
-          Lübeck, my dream city in Germany. Lübeck is a northern German city
-          distinguished by Brick Gothic architecture, which dates to its time as
-          the medieval capital of the Hanseatic League, a powerful trading
-          confederation.
-        </p>
+      </section>
 
-        <p>
-          The hanseatic city of Lübeck takes its place at the Baltic sea and is
-          not only known for being the hometown for the German writer Thomas
-          Mann but also for its beautiful old town which is part of the UNESCO
-          world cultural heritage. After Lübeck your next stop is Travemünde a
-          unique city with historic buildings and a long beach that shakes up
-          holiday flair.
-        </p>
+      <section>
+        <div class="container mx-auto px-5">
+          <div class="item w-fit text-center">
+            <img
+              src="./images/Screenshot 2024-10-29 at 22.02.24 (1).png"
+              alt="lubeck"
+              class="w-full"
+            />
+            <p>
+              Lübeck, my dream city in Germany. Lübeck is a northern German city
+              distinguished by Brick Gothic architecture, which dates to its
+              time as the medieval capital of the Hanseatic League, a powerful
+              trading confederation.
+            </p>
+            <p>
+              The hanseatic city of Lübeck takes its place at the Baltic sea and
+              is not only known for being the hometown for the German writer
+              Thomas Mann but also for its beautiful old town which is part of
+              the UNESCO world cultural heritage. After Lübeck your next stop is
+              Travemünde, a unique city with historic buildings and a long beach
+              that shakes up holiday flair.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="bg-[rgb(254,240,247)] text-blue-950 pt-[60px] pb-[30px]">
       <div class="container mx-auto px-4">
         <div class="footer-body flex justify-between items-start flex-wrap">
           <span class="company-name font-bold text-xl">Victoria Sani</span>
-
           <div class="footer-links flex gap-12">
             <ul class="footer-items list-none p-0 text-sm leading-7 m-0">
               <li
@@ -162,7 +184,6 @@
                 <a class="text-violet-950 no-underline" href="/">Email</a>
               </li>
             </ul>
-
             <ul class="footer-items list-none p-0 text-sm leading-7 m-0">
               <li
                 class="footer-item__title text-violet-950 mb-3.5 font-extrabold"
@@ -172,9 +193,8 @@
               <li class="footer-item">
                 <a class="text-violet-950 no-underline" href="/">Jobs</a>
               </li>
-
               <li class="footer-item">
-                <a class="text-violet-950 no-underline" href="/">My view</a>
+                <a class="text-violet-950 no-underline" href="/">Myself</a>
               </li>
               <li class="footer-item">
                 <a class="text-violet-950 no-underline" href="/">My Team</a>
@@ -182,7 +202,6 @@
             </ul>
           </div>
         </div>
-
         <p class="text-sm mt-[100px]">
           &copy; 2024 Vicky Sani - All rights reserved
         </p>
