@@ -21,6 +21,10 @@
         <nav
           class="flex bg-[rgb(254,240,247)] drop-shadow-md py-9 px-7 italic font-semibold text-lg text-purple-950"
         >
+          <div class="logo">
+            <span class="logo-span font-bold italic text-2xl">Amateur</span>
+            <span class="text-2xl">Vicky!</span>
+          </div>
           <ul class="flex gap-7">
             <li>
               <a
@@ -44,6 +48,13 @@
               >
             </li>
           </ul>
+
+          <form class="flex">
+            <div class="justify-self-end">
+              <input type="search" placeholder="Search" />
+              <button class="" type="submit">Search</button>
+            </div>
+          </form>
         </nav>
       </div>
     </header>
@@ -68,6 +79,7 @@
                 Join me as I open up my world and invite you to be a part of
                 each step!
               </p>
+              <span class="inline-block pt-8">Get more recipes</span>
               <svg
                 class="self-end"
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,11 +100,9 @@
               <img
                 src="./images/Sopaipillas.png"
                 alt="sopaipillas"
-                class="w-72 h-auto"
+                class="object-fill h-72"
               />
-              <div
-                class="name-price my-4 flex justify-between items-center font-bold"
-              >
+              <div class="my-4 flex justify-between items-center font-bold">
                 <span>The Chilean Sopaipillas</span>
               </div>
             </div>
@@ -100,11 +110,9 @@
               <img
                 src="./images/empanadas.png"
                 alt="empanada"
-                class="w-72 h-auto"
+                class="object-fill h-72"
               />
-              <div
-                class="name-price my-4 flex justify-between items-center font-bold"
-              >
+              <div class="my-4 flex justify-between items-center font-bold">
                 <span>Empanadas fritas</span>
               </div>
             </div>
@@ -112,49 +120,23 @@
         </div>
       </section>
 
-      <section>
-        <div class="container mx-auto px-5 flex flex-wrap gap-6">
-          <div class="item w-fit text-center">
-            <img src="./images/pasta.png" alt="pasta" class="w-72 h-auto" />
-            <div>
-              <p>
-                Pasta is one of the best dishes Italy has given to the world.
-                Today, it’s a global culinary favorite, and we can always add
-                our own twist to each dish. This is my favorite recipe, made
-                with asparagus, shrimp, and vegan cream.
-              </p>
-            </div>
-          </div>
-          <div class="item w-fit text-center">
-            <img src="./images/paella.png" alt="paella" class="w-72 h-auto" />
-            <div>
-              <p>
-                Here’s another classic paella! This is a variant on the
-                traditional recipe, but it’s just as delicious and has my own
-                personal twist that I’d love to share today. The rice I cooked
-                for my friends included chorizo, chicken, and shrimp—a true
-                flavor explosion.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
+      <section class="mb-16">
         <div class="container mx-auto px-5">
-          <div class="item w-fit text-center">
+          <div class="object-fill item w-fit">
+            <h2 class="text-[#3B3B39] text-2xl">Amateur Travel and Pics!</h2>
+            <span>This week I recommend: <strong>Lübeck</strong> </span>
             <img
               src="./images/Screenshot 2024-10-29 at 22.02.24 (1).png"
               alt="lubeck"
-              class="w-full"
+              class="w-full mb-6 mt-6"
             />
-            <p>
+            <p class="text-left">
               Lübeck, my dream city in Germany. Lübeck is a northern German city
               distinguished by Brick Gothic architecture, which dates to its
               time as the medieval capital of the Hanseatic League, a powerful
               trading confederation.
             </p>
-            <p>
+            <p class="text-left">
               The hanseatic city of Lübeck takes its place at the Baltic sea and
               is not only known for being the hometown for the German writer
               Thomas Mann but also for its beautiful old town which is part of
