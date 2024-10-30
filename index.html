@@ -21,47 +21,49 @@
         <nav
           class="flex justify-between bg-[rgb(254,240,247)] drop-shadow-md py-9 px-7 italic font-semibold text-lg text-purple-950"
         >
-          <div class="logo">
-            <span class="logo-span font-bold italic text-2xl">Amateur</span>
-            <span class="text-2xl">Vicky!</span>
+          <div
+            class="logo flex flex-col items-center gap-2 lg:text-2xl md:text-2xl sm:text-lg font-semibold italic"
+          >
+            <span class="logo-span font-bold italic">Amateur</span>
+            <span class="block">Vicky!</span>
           </div>
-          <ul class="flex gap-7">
+          <ul class="lg:flex gap-5 text-base md:text-lg">
             <li>
               <a
                 href=""
-                class="nav-link text-sm hover:font-medium hover:underline"
+                class="nav-link text-lg hover:font-medium hover:underline"
                 >New beginnings</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="nav-link text-sm hover:font-medium hover:underline"
+                class="nav-link text-lg hover:font-medium hover:underline"
                 >Recipes and more</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="nav-link text-sm hover:font-medium hover:underline"
+                class="nav-link text-lg hover:font-medium hover:underline"
                 >My hobby Pics</a
               >
             </li>
           </ul>
 
-          <form class="flex">
-            <div>
-              <input type="search" placeholder="Search" />
+          <form class="nav-search">
+            <div class="flex">
+              <input type="search" placeholder="Write Here" />
               <button
-                class="border-solid border-2 border-purple-500 mx-5 px-5 rounded-md"
+                class="border-solid border-2 border-purple-500 mx-5 px-5 rounded-md hover:bg-purple-400"
                 type="submit"
               >
                 Search
               </button>
             </div>
           </form>
-          <ul>
-            <li>
+          <ul class="nav-icons">
+            <li class="hover:bg-purple-400">
               <a href=""
                 ><svg
                   class="justify-evenly"
@@ -97,7 +99,7 @@
                   </g></svg
               ></a>
             </li>
-            <li>
+            <li class="hover:bg-purple-400">
               <a href=""
                 ><svg
                   enable-background="new 0 0 512 512"
@@ -131,40 +133,30 @@
     <main>
       <section class="hero my-20">
         <div class="container mx-auto px-5">
-          <div class="flex justify-center items-center flex-wrap gap-6">
+          <div
+            class="flex flex-col lg:flex-row items-center gap-8 lg:justify-center"
+          >
             <a
-              class="item-card w-[450px] h-[449px] bg-[rgb(252,250,244)] text-[#3B3B39] p-8 flex flex-col justify-center leading-snug"
+              class="bg-[rgb(252,250,244)] text-[#3B3B39] p-8 max-w-[400px] lg:w-[450px] rounded-md"
               href="/"
             >
-              <h1 class="h1-font font-normal text-3xl">
+              <h1 class="h1-font text-xl md:text-2xl lg:text-3xl">
                 Let's meet and share ideas together
               </h1>
-              <p class="font-light text-lg mt-6">
+              <p class="font-light text-xl mt-6">
                 Welcome! Be part of my journey as I share my favorite recipes,
                 cherished photos, and personal stories with you. Let’s work
                 together to create meaningful moments and experiences that
                 inspire.
               </p>
-              <p class="font-light text-lg mt-2">
+              <p class="font-light text-xl mt-2">
                 Join me as I open up my world and invite you to be a part of
                 each step!
               </p>
-              <span class="inline-block pt-8">Get more recipes & ideas</span>
-              <svg
-                class="self-end"
-                xmlns="http://www.w3.org/2000/svg"
-                width="54"
-                height="54"
-                viewBox="0 0 54 54"
-                fill="none"
+              <span
+                class="inline-block w-full p-6 text-center mt-6 rounded-md font-semibold bg-[rgb(214,179,75)]"
+                >Get more recipes & ideas</span
               >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M5.40002 27C5.40002 25.8816 6.30665 24.975 7.42502 24.975L41.4183 24.975L35.7471 19.7089C34.9276 18.9479 34.8801 17.6666 35.6411 16.847C36.4021 16.0275 37.6834 15.9801 38.5029 16.7411L47.9529 25.5161C48.3656 25.8992 48.6 26.4369 48.6 27C48.6 27.563 48.3656 28.1007 47.9529 28.4839L38.5029 37.2589C37.6834 38.0199 36.4021 37.9724 35.6411 37.1529C34.8801 36.3333 34.9276 35.0521 35.7471 34.2911L41.4183 29.025L7.42502 29.025C6.30665 29.025 5.40002 28.1183 5.40002 27Z"
-                  fill="#3B3B39"
-                />
-              </svg>
             </a>
             <div class="item w-fit text-center">
               <img
@@ -172,8 +164,12 @@
                 alt="sopaipillas"
                 class="object-fill h-72"
               />
-              <div class="my-4 flex justify-between items-center font-bold">
-                <span>The Chilean Sopaipillas</span>
+              <div
+                class="my-4 flex justify-between items-center font-bold text-lg"
+              >
+                <span class="block mt-16 font-bold"
+                  >The Chilean Sopaipillas</span
+                >
               </div>
             </div>
             <div class="item w-fit text-center">
@@ -182,8 +178,12 @@
                 alt="empanada"
                 class="object-fill h-72"
               />
-              <div class="my-4 flex justify-between items-center font-bold">
-                <span>Empanadas fritas</span>
+              <div
+                class="my-4 flex justify-between items-center font-bold text-lg"
+              >
+                <span class="block mt-16 px-12 font-bold"
+                  >Empanadas fritas</span
+                >
               </div>
             </div>
           </div>
@@ -193,25 +193,31 @@
       <section class="lubeck mb-16">
         <div class="container mx-auto px-5">
           <div class="w-fit">
-            <h2 class="text-[#3B3B39] text-2xl">Amateur Travel and Pics!</h2>
-            <span>This week I recommend: <strong>Lübeck</strong> </span>
-            <div class="relative w-fit">
+            <h2
+              class="text-[#3B3B39] ttext-2xl md:text-3xl lg:text-4xl font-bold mb-4"
+            >
+              Amateur Travel and Pics!
+            </h2>
+            <span class="text-xl block pt-4"
+              >This week I recommend: <strong>Lübeck</strong>
+            </span>
+            <div class="relative w-fit lg:w-auto mt-6 mb-6">
               <img
                 src="./images/Screenshot 2024-10-29 at 22.02.24 (1).png"
                 alt="lubeck"
                 class="object-fill mb-6 mt-6 object-contain md:object-scale-down"
               />
               <span
-                class="absolute top-36 right-96 text-white font-bold text-3xl"
+                class="absolute top-36 right-80 text-white font-bold text-5xl"
                 >Lübeck, my dream city in Germany!</span
               >
             </div>
-            <p class="text-left bg-[#fafbfd]"">
+            <p class="text-left tex text-lg px-12">
               Lübeck is a northern German city distinguished by Brick Gothic
               architecture, which dates to its time as the medieval capital of
               the Hanseatic League, a powerful trading confederation.
             </p>
-            <p class="text-left bg-[#fafbfd]">
+            <p class="text-left text-lg px-12">
               The hanseatic city of Lübeck takes its place at the Baltic sea and
               is not only known for being the hometown for the German writer
               Thomas Mann but also for its beautiful old town which is part of
@@ -230,7 +236,7 @@
               class="w-[450px] h-[449px] bg-[rgb(212,222,238)] text-[#3B3B39] p-8 flex flex-col justify-center leading-snug"
               href="/"
             >
-              <h2 class="h2-about font-normal text-2xl">
+              <h2 class="h2-about font-normal text-3xl font-semibold">
                 Take a Peek! Discover Amateur Vicky’s World!
               </h2>
             </a>
@@ -248,34 +254,33 @@
       <div class="container mx-auto px-4">
         <div class="footer-body flex justify-between items-start flex-wrap">
           <span class="company-name font-bold text-xl">Victoria Sani</span>
+          <p class="p-footer text-[rgb(213,179,74)] text-2xl mt-8">
+            Be Happy and enjoying cooking!
+          </p>
           <div class="footer-links flex gap-12">
-            <ul class="footer-items list-none p-0 text-sm leading-7 m-0">
+            <ul class="footer-items list-none p-0 text-lg leading-7 m-0">
               <li
                 class="footer-item__title text-violet-950 mb-3.5 font-extrabold"
               >
                 Contact
               </li>
-              <li class="footer-item">
-                <a class="text-violet-950 no-underline" href="/">Instagram</a>
+              <li class="footer-item text-lg text-violet-950 no-underline">
+                <a href="/">Instagram</a>
               </li>
               <li class="footer-item">
-                <a class="text-violet-950 no-underline" href="/">Email</a>
+                <a href="/">Email</a>
               </li>
             </ul>
-            <ul class="footer-items list-none p-0 text-sm leading-7 m-0">
-              <li
-                class="footer-item__title text-violet-950 mb-3.5 font-extrabold"
-              >
-                Myself
+            <ul class="footer-items list-none px-6 leading-7 m-0">
+              <li class="footer-item__title mb-3.5 font-extrabold">Myself</li>
+              <li class="footer-item text-lg">
+                <a href="/">Jobs</a>
               </li>
               <li class="footer-item">
-                <a class="text-violet-950 no-underline" href="/">Jobs</a>
+                <a href="/">Myself</a>
               </li>
               <li class="footer-item">
-                <a class="text-violet-950 no-underline" href="/">Myself</a>
-              </li>
-              <li class="footer-item">
-                <a class="text-violet-950 no-underline" href="/">My Team</a>
+                <a href="/">My Team</a>
               </li>
             </ul>
           </div>
