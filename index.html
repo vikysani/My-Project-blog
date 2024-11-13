@@ -16,6 +16,26 @@
     <title>My Project</title>
   </head>
   <body>
+    <script>
+      // Open Modal Function
+      function openForm() {
+        document.getElementById("myModal").classList.remove("hidden");
+      }
+
+      // Close Modal Function
+      function closeForm() {
+        document.getElementById("myModal").classList.add("hidden");
+      }
+
+      // Close modal when clicking outside of it
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+          closeForm();
+        }
+      });
+    </script>
+
     <header>
       <nav
         class="flex justify-between items-center flex-wrap bg-[rgb(254,240,247)] drop-shadow-md py-9 px-7 font-semibold text-lg text-purple-950"
@@ -303,14 +323,16 @@
           </div>
           <div class="footer-links flex gap-12">
             <ul
-              class="footer-items flex flex-col list-none p-0 text-lg leading-7 m-0 gap-4"
+              class="footer-items flex list-none p-0 text-lg leading-7 m-0 gap-6"
             >
-              <li
-                class="footer-item__title text-violet-950 mb-3.5 font-extrabold"
-              >
-                Contact
+              <li class="hover:underline hover:font-bold hover:text-purple-950">
+                <button onclick="openForm()" aria-label="Open contact form">
+                  Write me!
+                </button>
               </li>
-              <li class="footer-item text-lg text-violet-950 no-underline">
+              <li
+                class="footer-item text-lg text-violet-950 no-underline hover:underline hover:text-purple-950"
+              >
                 <a class="igram" href="/"
                   ><a href=""
                     ><svg
@@ -377,20 +399,63 @@
                 ></a>
               </li>
             </ul>
-            <ul class="footer-items list-none px-6 leading-7 m-0">
-              <li class="footer-item__title mb-3.5 font-extrabold">Myself</li>
-              <li class="footer-item text-lg">
-                <a href="/">Jobs</a>
-              </li>
-              <li class="footer-item">
-                <a href="/">Myself</a>
-              </li>
-              <li class="footer-item">
-                <a href="/">My Team</a>
-              </li>
-            </ul>
           </div>
         </div>
+        <!-- Modal Wrapper -->
+        <div
+          id="myModal"
+          class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+        >
+          <!-- Modal Content -->
+          <div class="bg-white rounded-lg p-6 w-11/12 max-w-lg relative">
+            <button
+              onclick="closeForm()"
+              class="absolute top-2 right-2 text-gray-600 text-2xl cursor-pointer"
+            >
+              ✖
+            </button>
+
+            <h2 class="text-3xl mb-4 text-[rgb(71,103,120)] font-extrabold]">
+              Let's talk
+            </h2>
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="name" class="block text-lg">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full p-2 border rounded"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-lg">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full p-2 border rounded"
+                  required
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-lg">Your Message</label>
+                <textarea
+                  id="message"
+                  class="w-full p-2 border rounded"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-[rgb(213,179,74)] text-white p-4 rounded hover:bg-blue-700"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+
         <p class="text-sm mt-[100px]">
           &copy; 2024 Vicky Sani - All rights reserved
         </p>
